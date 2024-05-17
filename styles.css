@@ -38,7 +38,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .project-title {
@@ -92,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: flex-end;
 }
 
 button {
