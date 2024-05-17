@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-     align-items: flex-end;
+     align-items: center;
     margin-top: 20px;
 }
 
@@ -99,9 +99,9 @@ body {
 }
 
 button {
-    padding: 20px; /* Ajustează dimensiunea padding-ului pentru butoane */
-    width: 200px; /* Fixăm lățimea butoanelor pentru a fi egale */
-    height: 80px; /* Fixăm înălțimea butoanelor pentru a fi egale */
+    padding: 15px; /* Ajustează dimensiunea padding-ului pentru butoane */
+    width: 180px; /* Fixăm lățimea butoanelor pentru a fi egale */
+    height: 70px; /* Fixăm înălțimea butoanelor pentru a fi egale */
     font-size: 1em;
     cursor: pointer;
     border: none;
@@ -165,10 +165,10 @@ button:hover {
 }
 
 .video-page button {
-    width: 200px;
-    height: 80px;
+    width: 180px;
+    height: 70px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 15px;
     font-size: 1em;
     cursor: pointer;
     border: none;
