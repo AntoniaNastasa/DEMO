@@ -1,19 +1,23 @@
 // script.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('button');
-    const videos = document.querySelectorAll('iframe');
+    const videoContainers = document.querySelectorAll('.video-container');
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
             const videoId = button.getAttribute('data-video');
 
-            videos.forEach(video => {
-                if (video.id === videoId) {
-                    video.classList.remove('hidden');
+            videoContainers.forEach(videoContainer => {
+                if (videoContainer.id === videoId) {
+                    videoContainer.classList.remove('hidden');
                 } else {
-                    video.classList.add('hidden');
+                    videoContainer.classList.add('hidden');
                 }
             });
+
+            // Scroll to the video section
+            document.getElementById('videos').scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
