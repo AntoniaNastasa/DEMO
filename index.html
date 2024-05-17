@@ -20,33 +20,17 @@
     <section id="demo">
         <h2>Demo Interactiv</h2>
         <div class="buttons-container">
-            <button data-video="autentificare-video">Autentificare</button>
-            <button data-video="creare-cont-video">Creare Cont</button>
-            <button data-video="resetare-parola-video">Resetare Parolă</button>
-            <button data-video="pagina-principala-video">Pagina Principală</button>
+            <button onclick="openVideoPage('autentificare.html')">Autentificare</button>
+            <button onclick="openVideoPage('creare-cont.html')">Creare Cont</button>
+            <button onclick="openVideoPage('resetare-parola.html')">Resetare Parolă</button>
+            <button onclick="openVideoPage('pagina-principala.html')">Pagina Principală</button>
         </div>
     </section>
 
-    <!-- Videoclipuri -->
-    <section id="videos">
-        <div id="autentificare-video" class="video-container hidden">
-            <h2>Autentificare</h2>
-            <iframe src="https://www.youtube.com/embed/your-login-video-link" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="creare-cont-video" class="video-container hidden">
-            <h2>Creare Cont</h2>
-            <iframe src="https://www.youtube.com/embed/your-create-account-video-link" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="resetare-parola-video" class="video-container hidden">
-            <h2>Resetare Parolă</h2>
-            <iframe src="https://www.youtube.com/embed/your-reset-password-video-link" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div id="pagina-principala-video" class="video-container hidden">
-            <h2>Pagina Principală</h2>
-            <iframe src="https://www.youtube.com/embed/your-main-page-video-link" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
+    <script>
+        function openVideoPage(page) {
+            window.open(page, '_blank');
+        }
+    </script>
 </body>
 </html>
