@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Aliniază imaginea și butoanele la centru */
+     align-items: flex-end;
 }
 
 .project-title {
@@ -93,6 +93,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 pe linie */
     gap: 20px;
+    align-items: flex-end;
 }
 
 button {
