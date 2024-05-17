@@ -90,8 +90,8 @@ body {
 }
 
 .buttons-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 pe linie */
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     align-items: flex-end;
 }
@@ -166,7 +166,7 @@ button:hover {
     font-size: 1em;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
+    background-color: #d3cbb8;
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s;
