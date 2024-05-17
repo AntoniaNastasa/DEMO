@@ -14,24 +14,27 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #intro h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #intro p {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 #intro img {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-top: 20px;
 }
 
 #demo {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
     background-color: #fff;
 }
@@ -43,6 +46,7 @@ body {
 
 .buttons-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -55,6 +59,7 @@ button {
     background-color: #007BFF;
     color: white;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -62,13 +67,15 @@ button:hover {
 }
 
 #videos {
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #f9f9f9;
 }
 
 .video-container {
     display: none;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .video-container h2 {
@@ -77,11 +84,41 @@ button:hover {
 }
 
 .video-container iframe {
-    width: 80%;
-    height: 400px;
+    width: 100%;
     max-width: 600px;
+    height: 315px;
+    border: none;
 }
 
 .hidden {
     display: none;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    #intro h1 {
+        font-size: 3em;
+    }
+
+    #intro p {
+        font-size: 1.5em;
+    }
+
+    #intro img {
+        width: 200px;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 900px) {
+    .buttons-container {
+        gap: 40px;
+    }
+
+    .video-container iframe {
+        height: 400px;
+    }
 }
