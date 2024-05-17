@@ -10,15 +10,34 @@ body {
 
 #intro {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #fff;
-    text-align: center;
     padding: 20px;
     box-sizing: border-box;
     color: #000;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.intro-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-title {
@@ -27,44 +46,50 @@ body {
 }
 
 #intro h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.study-field {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.sub-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.study-field, .year {
+    font-size: 1em;
 }
 
 #intro img {
-    width: 100px;
+    width: 150px;
     height: auto;
-    margin-top: 20px;
-}
-
-.contact {
-    font-size: 1em;
-    margin-top: 20px;
 }
 
 #demo {
     padding: 50px 20px;
-    text-align: center;
     background-color: #fff;
     color: #000;
 }
 
+.demo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 #demo h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
     font-weight: bold;
+    margin: 0;
 }
 
 .buttons-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -73,14 +98,14 @@ button {
     font-size: 1em;
     cursor: pointer;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: #d3cbb8;
+    color: #000;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #c2b8a3;
 }
 
 .hidden {
@@ -90,23 +115,26 @@ button:hover {
 /* Responsive Design */
 @media (min-width: 600px) {
     #intro h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
-    .project-title, .study-field, .contact {
-        font-size: 1.5em;
+    .project-title, .study-field, .year {
+        font-size: 1.2em;
     }
 
     #intro img {
-        width: 150px;
+        width: 200px;
     }
 
     button {
         font-size: 1.2em;
     }
+
+    .buttons-container {
+        flex-direction: row;
+    }
 }
 
-/* Adăugăm la CSS-ul existent */
 
 .video-page {
     display: flex;
