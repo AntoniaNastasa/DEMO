@@ -1,55 +1,85 @@
 /* styles.css */
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
     margin: 0;
+    padding: 0;
 }
 
-.container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 800px;
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     text-align: center;
 }
 
-.button-container {
+#intro h1 {
+    font-size: 3em;
+}
+
+#intro p {
+    font-size: 1.5em;
+}
+
+#intro img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#demo {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#demo h2 {
+    font-size: 2em;
     margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 button {
     padding: 10px 20px;
-    margin: 5px;
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    border-radius: 4px;
+    font-size: 1em;
     cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+#videos {
+    padding: 50px;
+    background-color: #f9f9f9;
 }
 
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
+.video-container {
+    display: none;
+    text-align: center;
+}
+
+.video-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 80%;
+    height: 400px;
+    max-width: 600px;
 }
 
 .hidden {
