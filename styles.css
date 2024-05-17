@@ -24,6 +24,7 @@ body {
     justify-content: space-between;
     width: 80%;
     max-width: 1200px;
+    flex-wrap: wrap;
 }
 
 .intro-left {
@@ -40,6 +41,7 @@ body {
     flex-direction: column;
     justify-content: center;
      align-items: flex-end;
+    margin-top: 20px;
 }
 
 .project-title {
@@ -97,9 +99,9 @@ body {
 }
 
 button {
-    padding: 20px; 
-    width: 150px; 
-    height: 60px; 
+    padding: 20px; /* Ajustează dimensiunea padding-ului pentru butoane */
+    width: 200px; /* Fixăm lățimea butoanelor pentru a fi egale */
+    height: 80px; /* Fixăm înălțimea butoanelor pentru a fi egale */
     font-size: 1em;
     cursor: pointer;
     border: none;
@@ -163,8 +165,8 @@ button:hover {
 }
 
 .video-page button {
-    width: 150px;
-    height: 60px;
+    width: 200px;
+    height: 80px;
     margin-top: 20px;
     padding: 20px;
     font-size: 1em;
