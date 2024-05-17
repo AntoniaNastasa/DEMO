@@ -89,3 +89,28 @@ button:hover {
         font-size: 1.2em;
     }
 }
+
+
+.video-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.video-page iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+}
