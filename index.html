@@ -7,21 +7,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Plant Disease Detection Demo</h1>
-        <div class="button-container">
-            <button data-video="login-video">Autentificare</button>
-            <button data-video="create-account-video">Creare Cont</button>
-            <button data-video="reset-password-video">Resetare Parolă</button>
-            <button data-video="prediction-video">Predicție</button>
+    <!-- Prima parte a paginii -->
+    <section id="intro">
+        <div class="intro-container">
+            <h1>Antonia Nastasa</h1>
+            <p>Ingineria Sistemelor</p>
+            <img src="images/plant.png" alt="Plant Image">
         </div>
-        <div class="video-container">
-            <iframe id="login-video" src="https://www.youtube.com/embed/your-login-video-link" class="hidden"></iframe>
-            <iframe id="create-account-video" src="https://www.youtube.com/embed/your-create-account-video-link" class="hidden"></iframe>
-            <iframe id="reset-password-video" src="https://www.youtube.com/embed/your-reset-password-video-link" class="hidden"></iframe>
-            <iframe id="prediction-video" src="https://www.youtube.com/embed/your-prediction-video-link" class="hidden"></iframe>
+    </section>
+
+    <!-- A doua parte a paginii -->
+    <section id="demo">
+        <h2>Demo Interactiv</h2>
+        <div class="buttons-container">
+            <button data-video="autentificare-video">Autentificare</button>
+            <button data-video="creare-cont-video">Creare Cont</button>
+            <button data-video="resetare-parola-video">Resetare Parolă</button>
+            <button data-video="pagina-principala-video">Pagina Principală</button>
         </div>
-    </div>
+    </section>
+
+    <!-- Videoclipuri -->
+    <section id="videos">
+        <div id="autentificare-video" class="video-container hidden">
+            <h2>Autentificare</h2>
+            <iframe src="https://www.youtube.com/embed/your-login-video-link" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="creare-cont-video" class="video-container hidden">
+            <h2>Creare Cont</h2>
+            <iframe src="https://www.youtube.com/embed/your-create-account-video-link" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="resetare-parola-video" class="video-container hidden">
+            <h2>Resetare Parolă</h2>
+            <iframe src="https://www.youtube.com/embed/your-reset-password-video-link" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="pagina-principala-video" class="video-container hidden">
+            <h2>Pagina Principală</h2>
+            <iframe src="https://www.youtube.com/embed/your-main-page-video-link" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
